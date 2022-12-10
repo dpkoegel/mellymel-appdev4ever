@@ -4,7 +4,7 @@ streamlit.title('My parents new healthy diner')
 
 streamlit.header('Breakfast Favorites')
 
-streamlit.text('\U0001F4E1 Omega 3 & Bueberry Oatmeal')
+streamlit.text('\U+1F44D Omega 3 & Bueberry Oatmeal')
 
 streamlit.expander('\U0001F4E1 API endpoint details')
 
