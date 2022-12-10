@@ -9,5 +9,6 @@ streamlit.text('\U+1F44D Omega 3 & Bueberry Oatmeal')
 streamlit.expander('\U0001F4E1 API endpoint details')
 
 streamlit.text('Kale, Spinach & Rocket Smoothy')
+
 streamlit.text('Hard-Boiled Free-Range Egg')
 
