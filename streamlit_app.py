@@ -6,8 +6,7 @@ streamlit.header('Breakfast Favorites')
 
 streamlit.text('Omega 3 & Bueberry Oatmeal')
 
-streamlit.beta_expander('\U0001F4E1 API endpoint details')
-streamlit.beta_expander('\U+1F44D API endpoint detail')
+streamlit.sidebar.beta_expander('\U0001F4E1 API endpoint details')
 streamlit.text('Kale, Spinach & Rocket Smoothy')
 streamlit.text('Hard-Boiled Free-Range Egg')
 
