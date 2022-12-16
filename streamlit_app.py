@@ -22,7 +22,7 @@ streamlit.dataframe(fruits_to_show)
 
 streamlit.header('FruityVice Fruit Advise')
 try:
-   fruit_choice = streamlit.text_input('What fruit would you like information about?')
+   fruit_choice = streamlit.text_input("What fruit would you like information about?")
    if not fruit_choice
      streamlit.error("Please select a fruit to get information")
    else:
@@ -53,7 +53,7 @@ my_cur.execute("Select * from fruit_load_list")
 my_data_row2 = my_cur.fetchall()
 streamlit.header("The Fruit List Contains")
 streamlit.dataframe(my_data_row2)
-add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
+add_my_fruit = streamlit.text_input("What fruit would you like to add?','Jackfruit'")
 my_cur.execute ( "insert into fruit_load_list (FRUIT_NAME) values ('from streeamlit')")
 
 streamlit.write('Thanks For Adding ', add_my_fruit)
