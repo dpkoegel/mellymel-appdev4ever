@@ -54,10 +54,11 @@ except URLerror as e:
 
 # write your own comment 
 
+ my_cur = my_cnx.cursor()
 streamlit.header("The Fruit List Contains")
 #create function
 def get_fruit_load_list():
-    my_cur = my_cnx.cursor()
+    # my_cur = my_cnx.cursor()
     #with  my_cnx.cursor() as my_cur:
     my_cur.execute("Select * from fruit_load_list")
     return my_cur.fetchall()
