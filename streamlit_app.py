@@ -60,8 +60,8 @@ streamlit.header("The Fruit List Contains")
 def get_fruit_load_list():
     # my_cur = my_cnx.cursor()
     with  my_cnx.cursor() as my_cur:
-    my_cur.execute("Select * from fruit_load_list")
-    return my_cur.fetchall()
+       my_cur.execute("Select * from fruit_load_list")
+       return my_cur.fetchall()
 
 # Create a button
 if streamlit.button('Get Fruit Load List'):
@@ -71,12 +71,6 @@ if streamlit.button('Get Fruit Load List'):
       streamlit.dataframe(my_data_row2)    
 
 streamlit.stop()
-
-
-
-
-
-
 
 add_my_fruit = streamlit.text_input("What fruit would you like to add?','Jackfruit'")
 my_cur.execute ( "insert into fruit_load_list (FRUIT_NAME) values ('from streeamlit')")
